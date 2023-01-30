@@ -1,4 +1,4 @@
-# The script of the game goes in this file.
+﻿# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -14,13 +14,14 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg sea
 
+    
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    # show eileen happy
 
     # These display lines of dialogue.
 
@@ -48,7 +49,7 @@ label start:
     The rain was 
     {w}loud.
 
-    Had someone talked to me I wouldn’t be able to hear a thing of what they would say.
+    Had someone talked to me, I wouldn’t be able to hear a thing of what they would say.
     
     No one’s going to talk to me either way.
 
@@ -59,11 +60,18 @@ label start:
     I’m just another student amongst the class–
 
     """
-    #change scene
+    #change scene night sky for now cause i dont have any assets yet
+
+    scene bg night
+    with Fade(0.5, 1.0, 0.35)
     """
 
     My eyes felt 
     {w}heavy.
+
+    """
+    with Fade(0.5, 1.0, 0.35)
+    """
 
     My eyelids kept falling down each time I try to pull them up.
 
@@ -71,6 +79,9 @@ label start:
 
     Going in an up and down motion, as if agreeing to something.
 
+    """
+    with Fade(0.5, 1.0, 0.35)
+    """
     It felt as I’m about to fall at any point.
 
     Falling down would probably hurt.
