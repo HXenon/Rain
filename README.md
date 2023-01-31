@@ -9,3 +9,4 @@ Order :
 3. GUI (in-game)
 4. Character design
 5. Sprites
+6. BGM
