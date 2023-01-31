@@ -3,12 +3,12 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define Ren = Character("Ren")
+define Ren = Character("Eileen")
 
 
 # The game starts here.
 
-label start :
+label monologue01 :
     scene bg sea
 
     "Rain."
@@ -16,7 +16,7 @@ label start :
     """
     The sound of water trickling down, {p}drowning out the voice in the class.
 
-    Each droplet of water creates a melody-like sound, 
+    Each droplet of water creates a sound-like melody– 
     {p}calming, 
     {w} more than any song I have ever heard.
 
@@ -106,7 +106,7 @@ label start :
 
     """
 
-    with Fade(0.5, 1.0, 0.35)
+
     #change scene
     """
 
@@ -129,10 +129,7 @@ label start :
 
     My consciousness slowly 
     {w}fades away.
-    """
-    with Fade(0.5, 1.0, 0.35)
 
-    """
     As time passes 
     {w}by.
 
@@ -141,17 +138,16 @@ label start :
 
     As the voices 
     {w}echoed.
-    
-    """
+    """"
 
     with Fade(0.5, 1.0, 0.35)
 
     "..."
 
-    with Fade(0.75, 1.0, 0.5)
+    with Fade(0.75, 1.0, 0.4)
     "..."
 
-    with Fade(1.0, 1.5, 1.5)
+    with Fade(0.1, 1.5, 0.5)
 
     "."
 
@@ -198,7 +194,7 @@ label start :
 
     "shake*"
 
-    "?" "-wake up"
+    "-wake up"
 
     "shake*"
 
@@ -219,13 +215,13 @@ label start :
 
     "?" "Finally!"
 
-    Ren ".{w=0.5}.{w=0.5}."
+    Ren "..."
 
     "?" "What's with the face?"
 
-    Ren ".{w=0.5}.{w=0.5}."
+    Ren "..."
 
-    "?" "What? {w=1.0}Gonna cry? {w=1.0}Want me to call mommy to comfort her dear little baby? {w=1.0}Uhuu–"
+    "?" "What? Gonna cry? Want me to call mommy to comfort her dear little baby? Uhuu–"
 
     Ren "Fuck off.."
 
@@ -233,16 +229,16 @@ label start :
 
 menu :
 
-    "I said FUCK OFF!":
-        jump fight_back
+    "I said FUCK OFF\!"
+        jump fight_back :
 
-    "Nothing.":
-        jump do_nothing
+    "Nothing."
+        jump do_nothing :
 
 label fight_back :
 
     "There's no way I'm saying that!"
-    jump do_nothing
+        jump do_nothing
 
 label do_nothing :
 
@@ -250,11 +246,11 @@ label do_nothing :
 
     "?" "Man, you're boring."
 
-    "?" "Hurry and sort your stuff out, {w=1.0 }I'll be at the gates."
+    "?" "Hurry and sort your stuff out, I'll be at the gates."
 
     Ren "..."
 
-    """
+    """"
 
     He left.
 
@@ -268,7 +264,6 @@ label do_nothing :
     Ren "Looks like the rain had stopped"
 
     
-
 
 
 
