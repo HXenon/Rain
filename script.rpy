@@ -8,7 +8,7 @@ define Ren = Character("Eileen")
 
 # The game starts here.
 
-label start:
+label monologue01 :
     scene bg sea
 
     "Rain."
@@ -46,6 +46,7 @@ label start:
     I’m just another student amongst the class–
 
     """
+
     #change scene night sky for now cause i dont have any assets yet
 
     scene bg night
@@ -77,6 +78,7 @@ label start:
     I wouldn’t want that.
 
     """
+
     # change scene
     """
     
@@ -88,7 +90,7 @@ label start:
     
     """
 
-    "Ren" "I’ll be using you as a wall, 
+    Ren "I’ll be using you as a wall, 
     {w}hope you won’t mind." 
 
     
@@ -103,6 +105,8 @@ label start:
     Although, some teacher would just get annoyed and it would end up being a longer lecture for us.
 
     """
+
+
     #change scene
     """
 
@@ -147,17 +151,130 @@ label start:
 
     "."
 
-    # closed eyes scene
+
+    # closed eye scene
     scene bg black
 
     """"
+
+    It was dark, but it’s different than that of a unlit closed room.
+
+    I could hear faint sounds in the background.
+
+    Sounds of the rain.
+
+    Sounds of my classmates talking.
+
+    Sound of my own breathing.
+
+    Moments had passed. 
+
+    How long has it been? 
+
+    Has the school ended?
+
+    Should I go home?
+
+    Will there be someone waiting for me at home?
+
+    Thoughts kept popping up with questions upon questions.
+
+    I felt calm— 
+    {w}no, 
+    {w}relieved. 
+
+    The more thoughts that popped up, the more 
+    {w}relieved I got. 
+
+    """
+
+    # ren wakes up
+
+    "?" "–up."
+
+    "shake*"
+
+    "-wake up"
+
+    "shake*"
+
+    "?" "–wake UP, HOO–Y!"
+
+    """
+
+    A loud sound had pierced through my eardrums.
+
+    Like a gunshot, 
+    {w}piercing trough.
+
+    It had inevitably woke me up.
+
+    """
+
+    Ren "Agh!"
+
+    "?" "Finally!"
+
+    Ren "..."
+
+    "?" "What's with the face?"
+
+    Ren "..."
+
+    "?" "What? Gonna cry? Want me to call mommy to comfort her dear little baby? Uhuu–"
+
+    Ren "Fuck off.."
+
+    "?" "What was that?"
+
+menu :
+
+    "I said FUCK OFF!"
+        jump fight_back :
+
+    "Nothing."
+        jump do_nothing :
+
+label fight_back :
+
+    "There's no way I'm saying that!"
+        jump do_nothing
+
+label do_nothing :
+
+    Ren "Nothing."
+
+    "?" "Man, you're boring."
+
+    "?" "Hurry and sort your stuff out, I'll be at the gates."
+
+    Ren "..."
+
+    """"
+
+    He left.
+
+    I sat there trying to calm myself down.
+
+    """
+    # change scene
+
+    "It was quite"
+
+    Ren "Looks like the rain had stopped"
+
+    
+
+
+
+
 
 
 
     
     """
 
-
+    """
     # This ends the game.
 
     return
