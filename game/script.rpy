@@ -4,7 +4,6 @@
 
 #endregion
 
-#region Character Declarations
 
 define g = nvl_narrator
 define Ren = Character("Ren")
@@ -15,6 +14,7 @@ define Ren = Character("Ren")
 # Start the game
 label start:
     jump chp01_scn01
+    
 
 # End the game
 label ending:
