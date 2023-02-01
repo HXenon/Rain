@@ -35,24 +35,30 @@ label chp01_scn02:
 
     It wasn't a very comfortable position, but it keeps me from falling down.
 
-    Fortunately, I'm seated far from the front,\n
-    just behind someone with a bigger stature.
+    Fortunately, I'm seated far from the front,
+    \njust behind someone with a bigger stature.
     """
 
-    Ren "I'll be using you as a wall,\n
-    thank you very much." 
+    Ren "I'll be using you as a wall, {w=0.5}thanks." 
     
     # bg change
 
-    """
-    I stared at the clock in front of me which had been conveniently placed above the blackboard. 
+    g """
+    There was a clock at the front of the class which had been conveniently placed above the blackboard. 
 
     It was placed there for the students to keep track of the time.
 
     The teachers would often go past the lesson time and so the students would remind the teachers that it was time.
 
     Although, some teacher would just get annoyed and it would end up being a longer lecture for us.
+
+    
+    {## HELP. WTF. HOW.}
+    {## nvl ga hilang}
+    {## nvl hilang tp ak mesti hide show window}
     """
+    window hide
+
 
     #change scene
     with Fade(0.5, 1.0, 0.35)
@@ -77,7 +83,10 @@ label chp01_scn02:
 
     {cps=*0.5}My consciousness {cps=*0.5}slowly {cps=*0.5}fad{cps=*0.5}es {cps=*0.5}away.{/cps}
     """
-    with Fade(0.5, 1.0, 0.35)
+    with Fade(0.5, 1.0, 0.75)
+
+    window show
+    nvl clear
 
     g """
     As time{w=0.5}{nw} passes by.{w=1}{nw}

@@ -16,7 +16,8 @@ label chp01_scn01:
     
     It was the last class of the day.
 
-    It was{cps=5}... {/cps}{nw}\nLoud.{w}
+    It was{cps=5}... {/cps}{nw}\nNoisy.{w}
+    {## Loud = big sound, Noisy = multiple sounds being played}
 
     {clear}
 
@@ -35,7 +36,8 @@ label chp01_scn01:
     I'm not very noticeable in the class.{#noticeable? visible?}
     {#or replace with 'i like to think that im not the main character of my story. not trying to be visible, not trying to be popular'}
     {#just a side character in the background.}
-    
+    {## Certain without a shadow of doubt of not being noticable}
+    {## If presume 'think that im not the main character of my story' he is not sure of his own thoughts}
     I don't really talk to anyone that much.
 
     {clear}

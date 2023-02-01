@@ -1,68 +1,37 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {/cps} in '{/cps}{/cps}{/cps}{/cps}{/cps}'.:
-  File "game/scripts/chapter01/scene02.rpy", line 60, in script
-    """
-Exception: '/cps' closes a text tag that isn't open.
+While running game code:
+  File "game/script.rpy", line 8, in script
+    define g = nvl_narrator(size=30)
+  File "game/script.rpy", line 8, in script
+    define g = nvl_narrator(size=30)
+  File "game/script.rpy", line 8, in <module>
+    define g = nvl_narrator(size=30)
+TypeError: __call__() missing 1 required positional argument: 'what'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/chapter01/scene02.rpy", line 60, in script
-    """
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 1334, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "G:\renpy\renpy-8.0.3-sdk\renpy\text\text.py", line 1058, in segment
-    raise Exception("%r closes a text tag that isn't open." % text)
-Exception: '/cps' closes a text tag that isn't open.
+  File "E:\RENPY\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "E:\RENPY\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/script.rpy", line 8, in script
+    define g = nvl_narrator(size=30)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/script.rpy", line 8, in script
+    define g = nvl_narrator(size=30)
+  File "E:\RENPY\renpy-8.0.3-sdk\renpy\ast.py", line 2441, in execute
+    self.set()
+  File "E:\RENPY\renpy-8.0.3-sdk\renpy\ast.py", line 2455, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "E:\RENPY\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 8, in <module>
+    define g = nvl_narrator(size=30)
+TypeError: __call__() missing 1 required positional argument: 'what'
 
-Windows-10-10.0.22621 AMD64
+Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 Dreams 1.0
-Wed Feb  1 16:01:41 2023
+Thu Feb  2 00:37:41 2023

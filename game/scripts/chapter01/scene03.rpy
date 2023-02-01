@@ -107,4 +107,4 @@ label do_nothing :
     scene bg black
     with Dissolve(1.0)
 
-    jump ending
+    jump chp01_scn04

@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-The label fight_back is defined twice, at File "game/scripts/chapter01.rpyc", line 243:
-
-and File "game/scripts/chapter01/scene02.rpy", line 192:
-label fight_back :
-
-
-The label do_nothing is defined twice, at File "game/scripts/chapter01.rpyc", line 248:
-
-and File "game/scripts/chapter01/scene02.rpy", line 197:
-label do_nothing :
-
+File "game/script.rpy", line 8: invalid syntax
+    nvl_narrator(size 30)
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Feb  1 15:46:49 2023
+Thu Feb  2 00:37:17 2023
