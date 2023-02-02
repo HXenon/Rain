@@ -1,5 +1,5 @@
 label chp01_scn02:
-    scene bg night
+    scene bg night at truecenter
     with Fade(0.5, 1.0, 0.5)
 
     """
@@ -51,14 +51,10 @@ label chp01_scn02:
     The teachers would often go past the lesson time and so the students would remind the teachers that it was time.
 
     Although, some teacher would just get annoyed and it would end up being a longer lecture for us.
-
-    
-    {## HELP. WTF. HOW.}
-    {## nvl ga hilang}
-    {## nvl hilang tp ak mesti hide show window}
     """
-    window hide
 
+    nvl clear
+    window hide
 
     #change scene
     with Fade(0.5, 1.0, 0.35)
@@ -83,18 +79,20 @@ label chp01_scn02:
 
     {cps=*0.5}My consciousness {cps=*0.5}slowly {cps=*0.5}fad{cps=*0.5}es {cps=*0.5}away.{/cps}
     """
-    with Fade(0.5, 1.0, 0.75)
 
-    window show
-    nvl clear
+    scene bg black
+    with dissolve
 
     g """
-    As time{w=0.5}{nw} passes by.{w=1}{nw}
+    As time{w=0.5}{nw} passes by.{w=1}
 
-    As the rain{w=0.5}{nw} pours down.{w=1}{nw}
-
-    As the voices{w=0.5}{nw} echoed out.{w=1}{nw}
+    As the rain{w=0.5}{nw} pours down.{w=1}
+    
+    As the voices{w=0.5}{nw} echoed out.{w=1}
     """
+
+    nvl clear
+    window hide
 
     scene bg night
     with Fade(0.5, 1.0, 0.35)
