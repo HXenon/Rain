@@ -1,7 +1,6 @@
 errors.txt
 log.txt
 traceback.txt
-/game/saves/
-/game/saves/**
+game/saves/
+game/cache/
 .vscode/
-.vscode/**
