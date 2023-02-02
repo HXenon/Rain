@@ -1,5 +1,5 @@
 label chp01_scn01:
-    scene bg sea
+    scene bg sea at truecenter
     with dissolve
 
     g "Rain."
@@ -38,6 +38,8 @@ label chp01_scn01:
     {#just a side character in the background.}
     {## Certain without a shadow of doubt of not being noticable}
     {## If presume 'think that im not the main character of my story' he is not sure of his own thoughts}
+    {# jangan lupa double enter}
+
     I don't really talk to anyone that much.
 
     {clear}
