@@ -72,32 +72,32 @@ label chp01_scn03:
 
     "?" "What was that?"
 
-menu :
-    "I said, FUCK OFF!":
-        jump fight_back
+    menu .gelut:
+        "I said, FUCK OFF!":
+            jump .fight_back
 
-    "Nothing.":
+        "Nothing.":
+            jump .do_nothing
+
+    label .fight_back :
+        "There's no way I'm saying that!"
         jump do_nothing
 
-label fight_back :
-    "There's no way I'm saying that!"
-    jump do_nothing
+    label .do_nothing :
+        Ren "Nothing."
 
-label do_nothing :
-    Ren "Nothing."
+        "?" "Man, you're boring."
 
-    "?" "Man, you're boring."
+        "?" "Hurry and sort your stuff out, {w=1.0 }I'll be at the gates."
 
-    "?" "Hurry and sort your stuff out, {w=1.0 }I'll be at the gates."
-
-    Ren "..."
+        Ren "..."
 
     """
     He left.
 
     I sat there trying to calm myself down.
     """
-    
+
     scene bg night
     with Fade(0.25, 0.5, 0.25)
 

@@ -72,32 +72,30 @@ label chp01_scn04:
 
 menu :
 
-    "See you–":
-        jump say_goodbye01
+    menu .say_goodbye:
+        "See you around.":
+            jump .say_goodbye_1
 
-    "...":
+        "...":
         jump edgy01
 
     #say partings
-label say_goodbye01 :
-
-    Ren "See you–"
-    jump alone01
+    label .say_goodbye_1:
+        "I raised my arm to say goodbye, held it there for a while then slowly lowered it down."
+        Ren "See you around."
+        jump .alone
 
     #doesn't do anything
-label edgy01 :
+    label .say_goodbye_2:
+        Ren "{cps=2}...{/cps}"
+        "There he goes."
+        jump .alone
 
-    Ren "{cps=2}...{/cps}"
-    jump alone01
 
-
-label alone01 :
-
-    "I raised my arm as to say goodbye, held it there for a while then lowered it down slowly."
-
-    "Alone."
-
-    "Again."
+    label .alone :
+        """
+        Alone.{w}\nAgain.
+        """
 
     #change scene to home
 
