@@ -19,7 +19,7 @@ Chapter 1
   - part 3
   - part 4
   
-3. GUI (in-game)
-4. Character design
-5. Sprites
-6. BGM
+3. GUI (0%)
+4. Character design (0%)
+5. Sprites (0%)
+6. BGM (0%)
