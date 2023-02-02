@@ -42,7 +42,8 @@ label chp01_scn03:
 
     "?" "–wake UP,{w=0.5}{nw}{done} OOI!"
 
-    show bg glasswindow
+    show bg glasswindow at truecenter, triple_zoom
+
     with hpunch
 
     "?" "–wake UP,{fast} OOI!"
