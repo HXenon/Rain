@@ -56,7 +56,8 @@ label chp01_scn04:
     """
     Not a single word came out of our mouths.
 
-    We've never really gotten along anyway.
+    We've never really gotten along much.
+    {## 'anyway' makes it sound like he is trying to convice someone.}
 
     The only reason we were walking home together was because our homes are in the same direction.
 
@@ -111,12 +112,35 @@ label chp01_scn04:
     I entered my room, 
     {w=0.5}put my bag down, 
     {w=0.5}and lay on my bed. 
-
-    I had been blinking every other seconds, with each blinks getting slower and slower. 
     
-    Until finally,
+    Staring at the ceiling of my room, my thoughts wandered.
+    
+    It was quiet.
+    
+    Weights hanging by my eyelids.
+    
+    Bed springs holding my weight
+    
+    Cold and humid air filling up the room.
+    
+    Unlit room asking for the enlightment of the lamp.
+    
+    Mosquitoes buzzing.
+    
+    A single reptile. 
+    Waiting for it's prey.
+    
+    ...
 
-    My eyelids gave in.
+    Eyes wander about.
+    
+    Blinked slower.
+    
+    Empty thoughts.
+    
+    Heart beat...
+    
+    Pulsing.
    
     """
 
